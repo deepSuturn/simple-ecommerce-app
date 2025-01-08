@@ -1,6 +1,6 @@
 package com.suturn;
 
-public class Main {
+public class SimpleEcommerceApi {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
