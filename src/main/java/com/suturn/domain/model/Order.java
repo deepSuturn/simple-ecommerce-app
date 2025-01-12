@@ -1,21 +1,21 @@
 package com.suturn.domain.model;
 
-import com.suturn.domain.common.Role;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
+@Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@Entity
 @Builder
-public class User {
+@AllArgsConstructor
+public class Order {
     private String id;
-    private String name;
-    private String email;
-    private Role role;
-    private String password;
+    private List<Product> orderItems;
+    private float totalPrice;
+    private String address;
 }
